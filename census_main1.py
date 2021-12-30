@@ -1,6 +1,7 @@
 # Open Sublime text editor, create a new Python file, copy the following code in it and save it as 'census_main.py'.
 
 # Import modules
+import streamlit as st
 import numpy as np
 import pandas as pd
 
@@ -42,7 +43,6 @@ def load_data():
 
 census_df = load_data()
 
-import streamlit as st
 
 st.set_page_config(page_title = "Census Visualisation Web App", page_icon = ":car:", layout = "centered", initial_sidebar_state = "auto")
 
